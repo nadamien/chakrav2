@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Chakra Ella - Luxury eco-glamping resort in Sri Lanka. Experience nature, wellness, and adventure in our sustainable luxury tents.">
+    <meta name="keywords" content="glamping, eco resort, luxury camping, Sri Lanka, wellness retreat, nature resort">
+    <title>Chakra Ella - Luxury Eco Glamping Resort | Sri Lanka</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Open+Sans:wght@300;400;600;700&family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Preloader CSS -->
+    <style>
+        #preloader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: #F5F3ED;
+            z-index: 9999;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: opacity 0.5s;
+        }
+        .loader {
+            width: 60px;
+            height: 60px;
+            border: 4px solid #CBD4C2;
+            border-top: 4px solid #3B5E48;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader"></div>
+    </div>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="main-logo.png" alt="Chakra Ella" class="logo-img">
+            </div>
+            <div class="nav-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#accommodation" class="nav-link">Accommodation</a></li>
+                <li class="nav-item"><a href="#experiences" class="nav-link">Experiences</a></li>
+                <li class="nav-item"><a href="#wellness" class="nav-link">Wellness</a></li>
+                <li class="nav-item"><a href="#dining" class="nav-link">Dining</a></li>
+                <li class="nav-item"><a href="#gallery" class="nav-link">Gallery</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                <li class="nav-item"><a href="#booking" class="nav-link nav-cta">Book Now</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title animate-fade-in">Welcome to Chakra Ella</h1>
+            <p class="hero-subtitle animate-fade-in-delay">Where Luxury Meets Nature</p>
+            <p class="hero-description animate-fade-in-delay-2">Experience the perfect harmony of eco-luxury glamping in the heart of Sri Lanka's wilderness</p>
+            <div class="hero-buttons animate-fade-in-delay-3">
+                <a href="#booking" class="btn btn-primary">Book Your Stay</a>
+                <a href="#about" class="btn btn-secondary">Discover More</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span></span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Our Story</span>
+                <h2 class="section-title">Reconnect with Nature</h2>
+                <div class="title-decoration"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="lead-text">Chakra Ella is more than just a resort; it's a sanctuary where luxury and sustainability coexist in perfect harmony.</p>
+                    <p>Nestled in the pristine wilderness of Sri Lanka, our eco-luxury glamping resort offers an unparalleled experience of comfort amidst nature. Each of our thoughtfully designed tents provides panoramic views of the surrounding landscape, allowing you to wake up to the sounds of exotic birds and the rustling of leaves.</p>
+                    <p>We believe in responsible tourism that preserves the natural beauty of our surroundings while providing our guests with exceptional comfort and unforgettable experiences. Our commitment to sustainability is reflected in every aspect of our operations, from solar-powered facilities to locally sourced organic cuisine.</p>
+                    <div class="about-features">
+                        <div class="feature-item">
+                            <span class="feature-icon">🌿</span>
+                            <h4>Eco-Friendly</h4>
+                            <p>100% sustainable operations</p>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">🏕️</span>
+                            <h4>Luxury Tents</h4>
+                            <p>14 exclusive glamping units</p>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">🦋</span>
+                            <h4>Wildlife</h4>
+                            <p>Home to 200+ bird species</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?w=800&h=600&fit=crop" alt="Chakra Ella Glamping Tents at Sunset">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Accommodation Section -->
+    <section id="accommodation" class="accommodation-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Stay With Us</span>
+                <h2 class="section-title">Luxury Glamping Tents</h2>
+                <div class="title-decoration"></div>
+            </div>
+            <div class="accommodation-grid">
+                <div class="accommodation-card">
+                    <div class="accommodation-image">
+                        <img src="forest-tent.jpg" alt="Forest View Tent">
+                        <div class="accommodation-overlay">
+                            <a href="#" class="view-more">View Details</a>
+                        </div>
+                    </div>
+                    <div class="accommodation-info">
+                        <h3>Forest View Tent</h3>
+                        <p class="accommodation-description">Immerse yourself in the canopy with panoramic forest views from your private deck.</p>
+                        <ul class="accommodation-features">
+                            <li>King-size bed</li>
+                            <li>Private bathroom</li>
+                            <li>Forest viewing deck</li>
+                            <li>Air conditioning</li>
+                        </ul>
+                        <div class="accommodation-price">
+                            <span class="price-label">From</span>
+                            <span class="price-amount">$250</span>
+                            <span class="price-period">per night</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accommodation-card">
+                    <div class="accommodation-image">
+                        <img src="river-tent.jpg" alt="River View Tent">
+                        <div class="accommodation-overlay">
+                            <a href="#" class="view-more">View Details</a>
+                        </div>
+                    </div>
+                    <div class="accommodation-info">
+                        <h3>River View Tent</h3>
+                        <p class="accommodation-description">Wake up to the soothing sounds of the river flowing past your luxury tent.</p>
+                        <ul class="accommodation-features">
+                            <li>Twin beds option</li>
+                            <li>Outdoor shower</li>
+                            <li>River viewing deck</li>
+                            <li>Natural ventilation</li>
+                        </ul>
+                        <div class="accommodation-price">
+                            <span class="price-label">From</span>
+                            <span class="price-amount">$280</span>
+                            <span class="price-period">per night</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accommodation-card">
+                    <div class="accommodation-image">
+                        <img src="premium-tent.jpg" alt="Premium Safari Tent">
+                        <div class="accommodation-overlay">
+                            <a href="#" class="view-more">View Details</a>
+                        </div>
+                    </div>
+                    <div class="accommodation-info">
+                        <h3>Premium Safari Tent</h3>
+                        <p class="accommodation-description">Ultimate luxury with a private plunge pool and butler service for discerning guests.</p>
+                        <ul class="accommodation-features">
+                            <li>Suite with living area</li>
+                            <li>Private plunge pool</li>
+                            <li>Butler service</li>
+                            <li>Premium amenities</li>
+                        </ul>
+                        <div class="accommodation-price">
+                            <span class="price-label">From</span>
+                            <span class="price-amount">$450</span>
+                            <span class="price-period">per night</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experiences Section -->
+    <section id="experiences" class="experiences-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Adventures</span>
+                <h2 class="section-title">Unique Experiences</h2>
+                <div class="title-decoration"></div>
+            </div>
+            <div class="experiences-carousel">
+                <div class="experience-item active">
+                    <div class="experience-image">
+                        <img src="saf.jpeg" alt="Wildlife Safari">
+                    </div>
+                    <div class="experience-content">
+                        <h3>Wildlife Safari</h3>
+                        <p>Embark on an unforgettable journey through our private reserve, home to elephants, leopards, and over 200 bird species. Our expert naturalists will guide you through morning and evening safaris.</p>
+                        <ul class="experience-highlights">
+                            <li>4x4 safari vehicles</li>
+                            <li>Expert naturalist guides</li>
+                            <li>Morning & evening drives</li>
+                            <li>Photography opportunities</li>
+                        </ul>
+                        <a href="#" class="btn-outline">Learn More</a>
+                    </div>
+                </div>
+                <div class="experience-nav">
+                    <button class="exp-nav-btn active" data-exp="0">Wildlife Safari</button>
+                    <button class="exp-nav-btn" data-exp="1">Nature Walks</button>
+                    <button class="exp-nav-btn" data-exp="2">Bird Watching</button>
+                    <button class="exp-nav-btn" data-exp="3">Cultural Tours</button>
+                    <button class="exp-nav-btn" data-exp="4">Adventure Sports</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Wellness Section -->
+    <section id="wellness" class="wellness-section">
+        <div class="wellness-bg-pattern"></div>
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Rejuvenate</span>
+                <h2 class="section-title">Wellness & Spa</h2>
+                <div class="title-decoration"></div>
+            </div>
+            <div class="wellness-content">
+                <div class="wellness-intro">
+                    <p class="lead-text">Discover tranquility at our award-winning spa, where ancient Ayurvedic traditions meet modern wellness practices.</p>
+                </div>
+                <div class="wellness-grid">
+                    <div class="wellness-card">
+                        <div class="wellness-icon">🧘</div>
+                        <h3>Yoga & Meditation</h3>
+                        <p>Daily sunrise yoga sessions and guided meditation in our open-air pavilion overlooking the forest.</p>
+                    </div>
+                    <div class="wellness-card">
+                        <div class="wellness-icon">💆</div>
+                        <h3>Ayurvedic Spa</h3>
+                        <p>Traditional healing treatments using organic herbs and oils sourced from our own gardens.</p>
+                    </div>
+                    <div class="wellness-card">
+                        <div class="wellness-icon">🌊</div>
+                        <h3>Natural Pool</h3>
+                        <p>Refresh yourself in our chemical-free natural swimming pool surrounded by tropical plants.</p>
+                    </div>
+                    <div class="wellness-card">
+                        <div class="wellness-icon">🌿</div>
+                        <h3>Wellness Programs</h3>
+                        <p>Customized detox and wellness programs designed by our expert practitioners.</p>
+                    </div>
+                </div>
+                <div class="wellness-cta">
+                    <a href="#" class="btn btn-primary">View Spa Menu</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dining Section -->
+    <section id="dining" class="dining-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Culinary Journey</span>
+                <h2 class="section-title">Farm to Table Dining</h2>
+                <div class="title-decoration"></div>
+            </div>
+            <div class="dining-showcase">
+                <div class="dining-main">
+                    <img src="76e55f65.avif" alt="Restaurant Interior" class="dining-image">
+                    <div class="dining-info">
+                        <h3>The Canopy Restaurant</h3>
+                        <p>Experience culinary excellence at our signature restaurant, where our chefs create masterpieces using ingredients from our organic garden and local farms. Every meal is a celebration of Sri Lankan flavors with a contemporary twist.</p>
+                        <div class="dining-features">
+                            <span class="dining-badge">Organic</span>
+                            <span class="dining-badge">Local Sourced</span>
+                            <span class="dining-badge">Vegetarian Options</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="dining-options">
+                    <div class="dining-option">
+                        <img src="sunrise-sunset-scene-breakfast-spread-312570158.webp" alt="Breakfast">
+                        <h4>Sunrise Breakfast</h4>
+                        <p>Start your day with a hearty breakfast served on your private deck</p>
+                    </div>
+                    <div class="dining-option">
+                        <img src="picnic.jpg" alt="Bush Picnic">
+                        <h4>Bush Picnic</h4>
+                        <p>Romantic picnic experiences in secluded spots around the property</p>
+                    </div>
+                    <div class="dining-option">
+                        <img src="dinner.jpg" alt="Dinner Under Stars">
+                        <h4>Dinner Under Stars</h4>
+                        <p>Private dining experiences under the starlit sky with personalized menus</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Visual Journey</span>
+                <h2 class="section-title">Gallery</h2>
+                <div class="title-decoration"></div>
+            </div>
+            <div class="gallery-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="accommodation">Accommodation</button>
+                <button class="filter-btn" data-filter="nature">Nature</button>
+                <button class="filter-btn" data-filter="dining">Dining</button>
+                <button class="filter-btn" data-filter="activities">Activities</button>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item" data-category="accommodation">
+                    <img src="gallery1.jpg" alt="Luxury Tent Interior">
+                    <div class="gallery-overlay">
+                        <span class="gallery-caption">Luxury Tent Interior</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="nature">
+                    <img src="gallery2.jpg" alt="Sunrise View">
+                    <div class="gallery-overlay">
+                        <span class="gallery-caption">Sunrise Over the Valley</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="dining">
+                    <img src="gallery3.jpg" alt="Gourmet Dining">
+                    <div class="gallery-overlay">
+                        <span class="gallery-caption">Farm to Table Experience</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="activities">
+                    <img src="gallery4.jpg" alt="Safari Adventure">
+                    <div class="gallery-overlay">
+                        <span class="gallery-caption">Wildlife Safari</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="accommodation">
+                    <img src="gallery5.jpg" alt="Private Deck">
+                    <div class="gallery-overlay">
+                        <span class="gallery-caption">Private Viewing Deck</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="nature">
+                    <img src="gallery6.jpg" alt="Forest Canopy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-caption">Forest Canopy</span>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery-more">
+                <button class="btn btn-secondary">View More</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Guest Reviews</span>
+                <h2 class="section-title">What Our Guests Say</h2>
+                <div class="title-decoration"></div>
+            </div>
+            <div class="testimonials-slider">
+                <div class="testimonial-item active">
+                    <div class="testimonial-content">
+                        <div class="stars">★★★★★</div>
+                        <p class="testimonial-text">An absolutely magical experience! The perfect blend of luxury and nature. The staff went above and beyond to make our anniversary celebration unforgettable. We'll definitely be returning.</p>
+                        <div class="testimonial-author">
+                            <img src="https://i.pravatar.cc/150?img=1" alt="Sarah Williams">
+                            <div class="author-info">
+                                <h4>Sarah Williams</h4>
+                                <span>United Kingdom</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-nav">
+                    <button class="test-prev" aria-label="Previous testimonial">‹</button>
+                    <button class="test-next" aria-label="Next testimonial">›</button>
+                </div>
+                <div class="testimonial-dots">
+                    <button class="dot active" data-slide="0"></button>
+                    <button class="dot" data-slide="1"></button>
+                    <button class="dot" data-slide="2"></button>
+                    <button class="dot" data-slide="3"></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section id="booking" class="booking-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Reserve Your Stay</span>
+                <h2 class="section-title">Book Your Escape</h2>
+                <div class="title-decoration"></div>
+            </div>
+            <div class="booking-content">
+                <form class="booking-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="check-in">Check-in Date</label>
+                            <input type="date" id="check-in" name="check-in" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="check-out">Check-out Date</label>
+                            <input type="date" id="check-out" name="check-out" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="tent-type">Tent Type</label>
+                            <select id="tent-type" name="tent-type" required>
+                                <option value="">Select Tent Type</option>
+                                <option value="forest">Forest View Tent</option>
+                                <option value="river">River View Tent</option>
+                                <option value="premium">Premium Safari Tent</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="guests">Number of Guests</label>
+                            <select id="guests" name="guests" required>
+                                <option value="1">1 Guest</option>
+                                <option value="2">2 Guests</option>
+                                <option value="3">3 Guests</option>
+                                <option value="4">4 Guests</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                    </div>
+                    <div class="form-group full-width">
+                        <label for="special-requests">Special Requests</label>
+                        <textarea id="special-requests" name="special-requests" rows="4" placeholder="Any special requirements or requests..."></textarea>
+                    </div>
+                    <div class="form-actions">
+                        <button type="submit" class="btn btn-primary btn-large">Check Availability</button>
+                        <p class="form-note">Or call us directly at <a href="tel:+94771234567">+94 77 123 4567</a></p>
+                    </div>
+                </form>
+                <div class="booking-info">
+                    <div class="info-card">
+                        <h3>Why Book Direct?</h3>
+                        <ul class="benefits-list">
+                            <li>Best rate guarantee</li>
+                            <li>Complimentary room upgrade (subject to availability)</li>
+                            <li>Free cancellation up to 48 hours</li>
+                            <li>Welcome drink and fruit basket</li>
+                            <li>Exclusive access to member-only experiences</li>
+                        </ul>
+                    </div>
+                    <div class="info-card">
+                        <h3>Package Deals</h3>
+                        <div class="package-item">
+                            <h4>Romantic Getaway</h4>
+                            <p>3 nights with candlelit dinner and spa treatment</p>
+                            <span class="package-price">From $899</span>
+                        </div>
+                        <div class="package-item">
+                            <h4>Adventure Package</h4>
+                            <p>5 nights with daily safaris and adventure activities</p>
+                            <span class="package-price">From $1,499</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Get in Touch</span>
+                <h2 class="section-title">Contact Us</h2>
+                <div class="title-decoration"></div>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <div class="info-icon">📍</div>
+                        <div class="info-details">
+                            <h4>Location</h4>
+                            <p>Wellawaya-Koslanda-Kumbalwela Road<br>
+                            Ella, Sri Lanka 90090</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">📞</div>
+                        <div class="info-details">
+                            <h4>Phone</h4>
+                            <p>+94 77 123 4567<br>
+                            +94 77 987 6543</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">✉️</div>
+                        <div class="info-details">
+                            <h4>Email</h4>
+                            <p>info@chakraella.com<br>
+                            reservations@chakraella.com</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">🕒</div>
+                        <div class="info-details">
+                            <h4>Office Hours</h4>
+                            <p>Monday - Sunday<br>
+                            8:00 AM - 8:00 PM (GMT+5:30)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.663055594256!2d81.04659131477247!3d6.810475995077889!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNsKwNDgnMzcuNyJOIDgxwrAwMic1Mi44IkU!5e0!3m2!1sen!2slk!4v1234567890" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <img src="logo-white.png" alt="Chakra Ella">
+                        <p>Luxury eco-glamping resort where nature meets comfort.</p>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">f</a>
+                        <a href="#" aria-label="Instagram">i</a>
+                        <a href="#" aria-label="Twitter">t</a>
+                        <a href="#" aria-label="YouTube">y</a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#accommodation">Accommodation</a></li>
+                        <li><a href="#experiences">Experiences</a></li>
+                        <li><a href="#wellness">Wellness & Spa</a></li>
+                        <li><a href="#dining">Dining</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Information</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Cancellation Policy</a></li>
+                        <li><a href="#">COVID-19 Safety</a></li>
+                        <li><a href="#">Sustainability</a></li>
+                        <li><a href="#">FAQs</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe to receive special offers and updates</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email address" required>
+                        <button type="submit" class="btn-subscribe">Subscribe</button>
+                    </form>
+                    <div class="certifications">
+                        <img src="eco-cert.png" alt="Eco Certification">
+                        <img src="luxury-cert.png" alt="Luxury Certification">
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Chakra Ella. All rights reserved. | Designed with 💚 for nature lovers</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top" aria-label="Back to top">↑</button>
+
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
