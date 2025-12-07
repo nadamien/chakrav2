@@ -17,9 +17,14 @@
     --white: #FFFFFF;
     
     /* Typography */
-    --font-primary: 'Playfair Display', serif;
-    --font-secondary: 'Open Sans', sans-serif;
-    --font-accent: 'Dancing Script', cursive;
+    /*--font-primary: 'Playfair Display', serif;*/
+    --font-primary: 'Garamond', serif;
+    --font-secondary: 'Garamond', serif;
+    --font-accent: 'Garamond', serif;
+
+    
+
+    /*--font-accent: 'Dancing Script', cursive;*/
     
     /* Shadows & Effects */
     --shadow-sm: 0 2px 4px rgba(46, 43, 38, 0.1);
@@ -148,6 +153,7 @@ img {
 .nav-link {
     color: var(--forest-bark);
     font-weight: 500;
+    font-size: large;
     padding: 0.5rem 0;
     position: relative;
     transition: var(--transition-base);
@@ -201,7 +207,7 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: url('https://images.unsplash.com/photo-1496545672447-f699b503d270?w=1920&h=1080&fit=crop') center/cover;
+    background: url('banner.jpg') center/cover;
     background-attachment: fixed;
     overflow: hidden;
 }
@@ -212,15 +218,16 @@ img {
     }
 }
 
+/*Changed PW*/
 .hero-overlay {
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(135deg, 
+    /*background: linear-gradient(135deg, 
         rgba(59, 94, 72, 0.7) 0%, 
-        rgba(46, 43, 38, 0.6) 100%);
+        rgba(46, 43, 38, 0.6) 100%);*/
 }
 
 .hero-content {
