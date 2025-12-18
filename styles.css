@@ -75,6 +75,8 @@ h6 { font-size: 1rem; }
 p {
     margin-bottom: 1rem;
     color: var(--forest-bark);
+    font-size: 1rem;
+    line-height: 1.7;
 }
 
 a {
@@ -117,7 +119,7 @@ img {
 }
 
 .nav-container {
-    max-width: 1100px;
+    max-width: 1400px;
     margin: 0 auto;
     padding: 1rem 20px;
     display: flex;
@@ -146,8 +148,9 @@ img {
 .nav-menu {
     display: flex;
     list-style: none;
-    gap: 2rem;
+    gap: 1.5rem;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .nav-link {
@@ -179,6 +182,7 @@ img {
     color: var(--white) !important;
     padding: 0.75rem 1.5rem !important;
     border-radius: 25px;
+    white-space: nowrap;
 }
 
 .nav-cta:hover {
@@ -207,7 +211,7 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: url('banner.jpg') center/cover;
+    background: url('76e55f65.avif') center/cover;
     background-attachment: fixed;
     overflow: hidden;
 }
@@ -234,30 +238,42 @@ img {
     text-align: center;
     z-index: 2;
     color: var(--white);
-    padding: 0 20px;
+    padding: 3rem 20px;
+    /*background: rgba(46, 43, 38, 0.5);*/
+    border-radius: 20px;
+    max-width: 1100px;
+    margin: 0 auto;
 }
 
 .hero-title {
     font-size: 4rem;
     color: var(--white);
     margin-bottom: 1rem;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    text-shadow: 3px 3px 8px rgba(0,0,0,0.7),
+                 1px 1px 4px rgba(0,0,0,0.5);
+    font-weight: 700;
 }
 
 .hero-subtitle {
     font-family: var(--font-accent);
     font-size: 2rem;
-    color: var(--desert-ochre);
+    color: var(--white);
     margin-bottom: 1rem;
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.7),
+                 1px 1px 3px rgba(0,0,0,0.5);
+    font-weight: 500;
 }
 
 .hero-description {
     font-size: 1.25rem;
     margin-bottom: 2rem;
-    color: var(--mist-fern);
+    color: var(--white);
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.7),
+                 1px 1px 3px rgba(0,0,0,0.5);
+    font-weight: 400;
 }
 
 .hero-buttons {
@@ -366,7 +382,7 @@ section {
 
 .section-tag {
     font-family: var(--font-accent);
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     color: var(--clay-terracotta);
     display: block;
     margin-bottom: 0.5rem;
@@ -405,15 +421,16 @@ section {
 }
 
 .lead-text {
-    font-size: 1.35rem;
+    font-size: 1.15rem;
     color: var(--jungle-moss);
     font-weight: 500;
     margin-bottom: 1.5rem;
-    line-height: 1.8;
+    line-height: 1.7;
 }
 
 .about-text p {
-    line-height: 1.8;
+    font-size: 1rem;
+    line-height: 1.7;
     margin-bottom: 1.5rem;
     color: var(--forest-bark);
 }
@@ -452,8 +469,8 @@ section {
 
 .feature-item p {
     color: var(--riverstone-gray);
-    font-size: 0.95rem;
-    line-height: 1.5;
+    font-size: 0.9rem;
+    line-height: 1.6;
 }
 
 .about-image {
@@ -564,6 +581,8 @@ section {
 
 .accommodation-description {
     color: var(--riverstone-gray);
+    font-size: 1rem;
+    line-height: 1.7;
     margin-bottom: 1.5rem;
 }
 
@@ -576,7 +595,7 @@ section {
 }
 
 .accommodation-features li {
-    font-size: 0.9rem;
+    font-size: 1rem;
     color: var(--jungle-moss);
     padding-left: 1.5rem;
     position: relative;
@@ -600,7 +619,7 @@ section {
 
 .price-label {
     color: var(--riverstone-gray);
-    font-size: 0.9rem;
+    font-size: 1rem;
 }
 
 .price-amount {
@@ -611,7 +630,7 @@ section {
 
 .price-period {
     color: var(--riverstone-gray);
-    font-size: 0.9rem;
+    font-size: 1rem;
 }
 
 /* Experiences Section */
@@ -783,7 +802,7 @@ section {
     color: var(--rainforest-green);
     padding: 0.5rem 1rem;
     border-radius: 20px;
-    font-size: 0.9rem;
+    font-size: 1rem;
     font-weight: 500;
 }
 
@@ -810,7 +829,7 @@ section {
 }
 
 .dining-option h4 {
-    font-size: 1.2rem;
+    font-size: 1.25rem;
     margin-bottom: 0.5rem;
 }
 
@@ -931,10 +950,10 @@ section {
 }
 
 .testimonial-text {
-    font-size: 1.35rem;
+    font-size: 1.15rem;
     font-style: italic;
     color: var(--jungle-moss);
-    line-height: 1.9;
+    line-height: 1.7;
     margin-bottom: 2.5rem;
     font-family: var(--font-primary);
     position: relative;
@@ -981,12 +1000,12 @@ section {
 .author-info h4 {
     color: var(--rainforest-green);
     margin-bottom: 0.25rem;
-    font-size: 1.3rem;
+    font-size: 1.25rem;
 }
 
 .author-info span {
     color: var(--riverstone-gray);
-    font-size: 1rem;
+    font-size: 0.95rem;
     font-style: normal;
 }
 
@@ -1336,7 +1355,23 @@ section {
     text-align: center;
     padding-top: 2rem;
     border-top: 1px solid var(--jungle-moss);
-    color: var(--riverstone-gray);
+    color: var(--mist-fern);
+}
+
+.footer-bottom p {
+    color: var(--mist-fern);
+}
+
+.footer-bottom a {
+    color: var(--desert-ochre);
+    font-weight: 600;
+    text-decoration: none;
+    transition: var(--transition-base);
+}
+
+.footer-bottom a:hover {
+    color: var(--white);
+    text-decoration: underline;
 }
 
 /* Back to Top Button */
@@ -1630,5 +1665,602 @@ section {
     img {
         max-width: 100%;
         page-break-inside: avoid;
+    }
+}
+/* ================================
+   PAGE-SPECIFIC STYLES
+   ================================ */
+
+/* PAGE 1: HOME SECTION */
+.page-home {
+    min-height: 100vh;
+    position: relative;
+}
+
+
+/* PAGE 2: ABOUT SECTION */
+.page-about {
+    background: var(--cream);
+    padding: 5rem 0;
+}
+
+.page-about .about-subsection {
+    margin-bottom: 3rem;
+}
+
+.page-about .about-subsection h3 {
+    color: var(--rainforest-green);
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+    position: relative;
+    padding-bottom: 0.5rem;
+}
+
+.page-about .about-subsection h3::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background: var(--clay-terracotta);
+}
+
+/* PAGE 3: ACCOMMODATION SECTION */
+.page-accommodation {
+    background: var(--white);
+    padding: 5rem 0;
+}
+
+.page-accommodation .section-subtitle {
+    max-width: 800px;
+    margin: 1rem auto 3rem;
+    color: var(--forest-bark);
+    font-size: 1rem;
+    line-height: 1.7;
+}
+
+.page-accommodation .accommodation-features {
+    margin-top: 5rem;
+    padding: 3rem;
+    background: var(--stone-beige);
+    border-radius: 15px;
+}
+
+.page-accommodation .accommodation-features h3 {
+    text-align: center;
+    color: var(--rainforest-green);
+    font-size: 2rem;
+    margin-bottom: 2.5rem;
+}
+
+.page-accommodation .features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+}
+
+.page-accommodation .features-grid .feature-item {
+    text-align: center;
+    padding: 1.5rem;
+    background: var(--white);
+    border-radius: 10px;
+    transition: var(--transition-base);
+}
+
+.page-accommodation .features-grid .feature-item:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-md);
+}
+
+.page-accommodation .features-grid .feature-icon {
+    font-size: 3rem;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+/* PAGE 4: ACTIVITIES SECTION */
+.page-activities {
+    background: var(--cream);
+    padding: 5rem 0;
+}
+
+.page-activities .activity-category {
+    margin-bottom: 4rem;
+    padding: 3.5rem;
+    background: linear-gradient(to bottom, var(--white), var(--cream));
+    border-radius: 20px;
+    box-shadow: var(--shadow-md);
+}
+
+.page-activities .category-title {
+    color: var(--rainforest-green);
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    position: relative;
+    padding-bottom: 1rem;
+}
+
+.page-activities .category-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background: var(--clay-terracotta);
+}
+
+.page-activities .activity-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+}
+
+.page-activities .activity-text {
+    padding: 1rem;
+}
+
+.page-activities .activity-image img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.page-activities .activities-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2.5rem;
+    margin-top: 2.5rem;
+}
+
+.page-activities .activity-item {
+    padding: 2rem;
+    background: var(--white);
+    border-radius: 15px;
+    text-align: center;
+    transition: var(--transition-base);
+    box-shadow: var(--shadow-sm);
+    border: 2px solid var(--mist-fern);
+}
+
+.page-activities .activity-item:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--rainforest-green);
+}
+
+.page-activities .activity-icon {
+    font-size: 3.5rem;
+    display: block;
+    margin-bottom: 1rem;
+    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));
+}
+
+.page-activities .activity-item h4 {
+    color: var(--rainforest-green);
+    margin-bottom: 0.75rem;
+    font-size: 1.35rem;
+    font-weight: 700;
+}
+
+.page-activities .activity-item p {
+    color: var(--jungle-moss);
+    font-size: 1rem;
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* PAGE 5: DINING SECTION */
+.page-dining {
+    background: var(--white);
+    padding: 5rem 0;
+}
+
+.page-dining .dining-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+    margin-bottom: 4rem;
+}
+
+.page-dining .dining-image img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: var(--shadow-lg);
+}
+
+.page-dining .dining-highlights {
+    padding: 3rem;
+    background: var(--stone-beige);
+    border-radius: 15px;
+}
+
+.page-dining .dining-highlights h3 {
+    text-align: center;
+    color: var(--rainforest-green);
+    font-size: 2rem;
+    margin-bottom: 2.5rem;
+}
+
+.page-dining .highlights-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+}
+
+.page-dining .highlight-card {
+    text-align: center;
+    padding: 2rem;
+    background: var(--white);
+    border-radius: 10px;
+    transition: var(--transition-base);
+}
+
+.page-dining .highlight-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-md);
+}
+
+.page-dining .highlight-icon {
+    font-size: 3rem;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+/* PAGE 6: SUSTAINABILITY SECTION */
+.page-sustainability {
+    background: linear-gradient(135deg, var(--mist-fern) 0%, var(--stone-beige) 100%);
+    padding: 5rem 0;
+}
+
+.page-sustainability .sustainability-intro {
+    max-width: 900px;
+    margin: 0 auto 4rem;
+    text-align: center;
+}
+
+.page-sustainability .sustainability-practices {
+    margin-bottom: 4rem;
+}
+
+.page-sustainability .sustainability-practices h3 {
+    text-align: center;
+    color: var(--rainforest-green);
+    font-size: 2rem;
+    margin-bottom: 3rem;
+}
+
+.page-sustainability .practices-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.page-sustainability .practice-card {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition-base);
+}
+
+.page-sustainability .practice-card:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--shadow-lg);
+}
+
+.page-sustainability .practice-icon {
+    font-size: 3.5rem;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.page-sustainability .community-engagement {
+    max-width: 900px;
+    margin: 4rem auto;
+    padding: 3rem;
+    background: var(--white);
+    border-radius: 15px;
+    text-align: center;
+}
+
+.page-sustainability .community-engagement h3 {
+    color: var(--rainforest-green);
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.page-sustainability .sustainability-promise {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 3rem;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    text-align: center;
+    border: 3px solid var(--rainforest-green);
+}
+
+.page-sustainability .sustainability-promise h3 {
+    color: var(--rainforest-green);
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+/* PAGE 7: LOCAL ATTRACTIONS SECTION */
+.page-attractions {
+    background: var(--white);
+    padding: 5rem 0;
+}
+
+.page-attractions .attractions-intro {
+    max-width: 900px;
+    margin: 0 auto 4rem;
+    text-align: center;
+}
+
+.page-attractions .attractions-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2.5rem;
+}
+
+.page-attractions .attraction-card {
+    background: var(--cream);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+    transition: var(--transition-base);
+}
+
+.page-attractions .attraction-card:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--shadow-xl);
+}
+
+.page-attractions .attraction-image img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.page-attractions .attraction-info {
+    padding: 1.5rem;
+}
+
+.page-attractions .attraction-info h3 {
+    color: var(--rainforest-green);
+    font-size: 1.5rem;
+    margin-bottom: 0.75rem;
+}
+
+.page-attractions .attraction-info p {
+    color: var(--forest-bark);
+    font-size: 1rem;
+    line-height: 1.7;
+}
+
+/* PAGE 8: BOOKING SECTION */
+.page-booking {
+    background: linear-gradient(135deg, var(--rainforest-green) 0%, var(--jungle-moss) 100%);
+    padding: 5rem 0;
+    color: var(--white);
+}
+
+.page-booking .section-header * {
+    color: var(--white);
+}
+
+.page-booking .booking-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.page-booking .booking-form {
+    background: var(--white);
+    padding: 3rem;
+    border-radius: 15px;
+    box-shadow: var(--shadow-xl);
+}
+
+.page-booking .form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.page-booking .form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.page-booking .form-group.full-width {
+    grid-column: 1 / -1;
+}
+
+.page-booking label {
+    color: var(--forest-bark);
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    font-size: 0.95rem;
+}
+
+.page-booking input,
+.page-booking select,
+.page-booking textarea {
+    padding: 0.75rem;
+    border: 2px solid var(--mist-fern);
+    border-radius: 8px;
+    font-family: var(--font-secondary);
+    font-size: 1rem;
+    transition: var(--transition-base);
+}
+
+.page-booking input:focus,
+.page-booking select:focus,
+.page-booking textarea:focus {
+    outline: none;
+    border-color: var(--rainforest-green);
+    box-shadow: 0 0 0 3px rgba(59, 94, 72, 0.1);
+}
+
+.page-booking .form-actions {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.page-booking .form-note {
+    color: var(--forest-bark);
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+
+.page-booking .form-note a {
+    color: var(--rainforest-green);
+    font-weight: 600;
+}
+
+/* PAGE 9: CONTACT SECTION */
+.page-contact {
+    background: var(--cream);
+    padding: 5rem 0;
+}
+
+.page-contact .contact-content {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 3rem;
+    margin-bottom: 3rem;
+}
+
+.page-contact .contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.page-contact .info-item {
+    display: flex;
+    gap: 1.5rem;
+    padding: 1.5rem;
+    background: var(--white);
+    border-radius: 10px;
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition-base);
+}
+
+.page-contact .info-item:hover {
+    transform: translateX(10px);
+    box-shadow: var(--shadow-md);
+}
+
+.page-contact .info-icon {
+    font-size: 2.5rem;
+    flex-shrink: 0;
+}
+
+.page-contact .info-details h4 {
+    color: var(--rainforest-green);
+    margin-bottom: 0.5rem;
+}
+
+.page-contact .info-details p {
+    color: var(--forest-bark);
+    margin: 0;
+    line-height: 1.6;
+}
+
+.page-contact .info-details a {
+    color: var(--clay-terracotta);
+    text-decoration: underline;
+}
+
+.page-contact .contact-map iframe {
+    border-radius: 15px;
+    box-shadow: var(--shadow-lg);
+}
+
+.page-contact .contact-tagline {
+    text-align: center;
+    margin-top: 4rem;
+    padding: 3rem;
+    background: linear-gradient(135deg, var(--rainforest-green) 0%, var(--jungle-moss) 100%);
+    border-radius: 15px;
+}
+
+.page-contact .tagline-text {
+    color: var(--white);
+    font-size: 2rem;
+    font-family: var(--font-accent);
+    font-weight: 700;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* ================================
+   RESPONSIVE DESIGN FOR PAGES
+   ================================ */
+
+@media (max-width: 768px) {
+    /* Page 3: Accommodation */
+    .page-accommodation .features-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Page 4: Activities */
+    .page-activities .activity-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .page-activities .activities-list {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Page 5: Dining */
+    .page-dining .dining-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .page-dining .highlights-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Page 6: Sustainability */
+    .page-sustainability .practices-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Page 7: Attractions */
+    .page-attractions .attractions-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Page 8: Booking */
+    .page-booking .form-row {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Page 9: Contact */
+    .page-contact .contact-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .page-contact .tagline-text {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .page-contact .tagline-text {
+        font-size: 1.25rem;
     }
 }
